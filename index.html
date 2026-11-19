@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LAVINÉ | فروشگاه اینترنتی</title>
+
+    <meta name="description" content="فروشگاه اینترنتی LAVINÉ در قم">
+    <meta name="keywords" content="فروشگاه لباس، خرید لباس در قم، LAVINE">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LAVINÉ</div>
+
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس</a>
+    </nav>
+
+    <div class="header-actions">
+        <button onclick="showLogin()">ورود</button>
+        <button onclick="showCart()">🛒 سبد خرید <span id="cartCount">0</span></button>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <span>COLLECTION 2026</span>
+        <h1>استایل خاص،<br>انتخاب متفاوت</h1>
+        <p>به دنیای مد و زیبایی LAVINÉ خوش آمدید.</p>
+        <a href="#products" class="main-btn">مشاهده محصولات</a>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <h2>محصولات منتخب</h2>
+    <input id="search" placeholder="جستجوی محصول...">
+    <div id="productList"></div>
+</section>
+
+<section id="about" class="about">
+    <h2>درباره LAVINÉ</h2>
+    <p>
+        ما در LAVINÉ تلاش می‌کنیم تجربه‌ای متفاوت
+        از خرید آنلاین را برای شما فراهم کنیم.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>ارتباط با ما</h2>
+    <p>قم | فروشگاه اینترنتی LAVINÉ</p>
+    <input id="message" placeholder="پیام شما">
+    <button onclick="sendMessage()">ارسال پیام</button>
+</section>
+
+<footer>
+    <h2>LAVINÉ</h2>
+    <p>تمام حقوق محفوظ است © 2026</p>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button onclick="closeModal()">✕</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
